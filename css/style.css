@@ -81,7 +81,6 @@ html{
     --Very-Dark-Blue: hsl(229, 31%, 21%);
     --box-shadow: .5rem .5rem  0 hsl(231, 69%, 60%);
     --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
-    --border: .2rem  solid var(--green);
 }
 
 
@@ -155,7 +154,7 @@ html{
     .header{
         padding: 2rem;
     }
-    
+
 }
 
 @media (max-width: 768px){
@@ -210,7 +209,7 @@ html{
 
 
 .home .image{
-    flex: 1 1 45rem;
+    flex: 1 1 40rem;
 }
 
 
@@ -221,24 +220,31 @@ html{
 
 
 .home .content{
-    flex: 1 1 45rem;
+    flex: 1 1 25rem;
 }
 
 
 .home .content h1{
     font-size: 4.5rem;
-    padding-block-end: 1rem 0;
+    padding-block-end: 1rem;
     color: var(--Very-Dark-Blue);
 }
 
 .home .content p{
     font-size: 1.7rem;
+    text-align:center;
     padding: 1rem 0;
-    max-width: 40rem;
+    display: grid;
+    max-width: 140rem;
     color: var(--Grayish-Blue);
     padding-bottom: 4rem;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
+.b { font-weight: bold;
+    accent-color: green;
+}
 .home .content .home-btn{
     padding: 1.3rem 2rem;
     background-color: #fff;
@@ -267,10 +273,11 @@ html{
 
 .features .row{
     display: flex;
-    align-items: center;
+    align-items:center;
     flex-wrap: wrap;
     gap: 5rem;
-    margin: 3rem 0;
+    margin: auto 0;
+    padding-top: 15rem;
 }
 
 .features .row .image{
@@ -279,28 +286,35 @@ html{
 
 
 .features .row .image img{
-    width: 100%;
+    width: 90%;
 }
 
 
 
 .features .row .content{
-    flex: 1 1 45rem;
+    flex: 1 1 35rem;
 }
 
 
 .features .row .content h1{
-    font-size: 4rem;
+    font-size: 1.7rem;
+    text-align:center;
     padding: 1rem 0;
-    color: var(--Very-Dark-Blue);
+    display: grid;
+    max-width: 140rem;
+    color: var(--Grayish-Blue);
+    padding-bottom: 4rem;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 
 .features .row .content p{
     font-size: 1.7rem;
-    padding: 1rem 0;
     color: var(--Grayish-Blue);
     padding-bottom: 4rem;
+    text-align: left;
+    text-justify: auto;
 }
 /* features section ends */
 
@@ -345,7 +359,6 @@ html{
 /* downloads section ends */
 
 
-
 /* footer section starts */
 .footer .box-container{
     display: grid;
@@ -355,20 +368,20 @@ html{
 
 .footer .box-container .box h3{
     font-size: 2.5rem;
-    color:var(--black);
+    color:midnightblue;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a{
     display: block;
     font-size: 1.5rem;
-    color:var(--light-color);
+    color:cadetblue;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a i{
     padding-right: .5rem;
-    color:var(--green);
+    color:lightseagreen;
 }
 
 .footer .box-container .box a:hover i{
